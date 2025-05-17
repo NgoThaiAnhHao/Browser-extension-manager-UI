@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Rye&family=Vina+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <!-- Nav logo -->
+        <img src="./img/img-logo.svg" alt="photo" class="logo" />
+        <div class="header__light">
+          <img src="./img/img-sun.svg" alt="photo" class="light_display" />
+        </div>
+      </header>
+      <main class="extensions">
+        <div class="extension extension__title">
+          <h1 class="extension__title--desc">Extensions List</h1>
+          <div class="extension__title--btn">
+            <button class="btn extension__title--btn-all active">All</button>
+            <button class="btn extension__title--btn-active">Active</button>
+            <button class="btn extension__title--btn-inActive">Inactive</button>
+          </div>
+        </div>
+
+        <div class="extension extension__items">
+          <!-- Item 1 -->
+          <!-- <div class="extension__item extension__item--1">
+            <span class="rows">
+              <img src="./img/img-devlens.svg" alt="photo" />
+
+              <span class="cols">
+                <h1 class="extension__item--title">DevLens</h1>
+                <p class="extension__item--desc">
+                  Quickly inspect page layouts and visualize element boundaries.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container active">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 2 -->
+          <!-- <div class="extension__item extension__item--2">
+            <span class="rows">
+              <img src="./img/img.stylespy.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">StyleSpy</h1>
+                <p class="extension__item--desc">
+                  Instantly analyze and copy CSS from any webpage element.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 3 -->
+          <!-- <div class="extension__item extension__item--3">
+            <span class="rows">
+              <img src="./img/img-speedboost.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">SpeedBoost</h1>
+                <p class="extension__item--desc">
+                  Optimizes browser resource usage to accelerate page loading.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 4 -->
+          <!-- <div class="extension__item extension__item--4">
+            <span class="rows">
+              <img src="./img/img-jsonwizard.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">JSONWizard</h1>
+                <p class="extension__item--desc">
+                  OFormats, validates, and prettifies JSON responses in-browser.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 5 -->
+          <!-- <div class="extension__item extension__item--5">
+            <span class="rows">
+              <img src="./img/img-tabmaster-pro.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">TabMaster Pro</h1>
+                <p class="extension__item--desc">
+                  Organizes browser tabs into groups and sessions.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 6 -->
+          <!-- <div class="extension__item extension__item--6">
+            <span class="rows">
+              <img src="./img/img-viewportbuddy.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">ViewportBuddy</h1>
+                <p class="extension__item--desc">
+                  Simulates various screen resolutions directly within the
+                  browser.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 7 -->
+          <!-- <div class="extension__item extension__item--7">
+            <span class="rows">
+              <img src="./img/img-markup-notes.svg" alt="photo" />
+
+              <span class="cols">
+                <h1 class="extension__item--title">Markup Notes</h1>
+                <p class="extension__item--desc">
+                  Enables annotation and notes directly onto webpages for
+                  collaborative debugging.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 8 -->
+          <!-- <div class="extension__item extension__item--8">
+            <span class="rows">
+              <img src="./img/img-gridguides.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">GridGuides</h1>
+                <p class="extension__item--desc">
+                  Overlay customizable grids and alignment guides on any
+                  webpage.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 9 -->
+          <!-- <div class="extension__item extension__item--9">
+            <span class="rows">
+              <img src="./img/img-palette-picker.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">Palette Picker</h1>
+                <p class="extension__item--desc">
+                  Instantly extracts color palettes from any webpage.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 10 -->
+          <!-- <div class="extension__item extension__item--10">
+            <span class="rows">
+              <img src="./img/img-linkchecker.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">LinkChecker</h1>
+                <p class="extension__item--desc">
+                  Scans and highlights broken links on any page.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 11 -->
+          <!-- <div class="extension__item extension__item--11">
+            <span class="rows">
+              <img src="./img/img-dom-snapshot.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">DOM Snapshot</h1>
+                <p class="extension__item--desc">
+                  Capture and export DOM structures quickly.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span>
+          </div> -->
+
+          <!-- Item 12
+          <div class="extension__item extension__item--12">
+            <span class="rows">
+              <img src="./img/img-consoleplus.svg" alt="photo" />
+              <span class="cols">
+                <h1 class="extension__item--title">ConsolePlus</h1>
+                <p class="extension__item--desc">
+                  Enhanced developer console with advanced filtering and
+                  logging.
+                </p>
+              </span>
+            </span>
+
+            <span class="item--btn">
+              <button class="extension__item--remove">Remove</button>
+              <div class="extension__item--active-container">
+                <div class="extension__item--active"></div>
+              </div>
+            </span> -->
+        </div>
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.frontendmentor.io/profile/NgoThaiAnhHao"
+            >Ngo Thai Anh Hao</a
+          >.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
